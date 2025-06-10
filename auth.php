@@ -51,14 +51,14 @@ session_start();
                 <form id="login-form-submit" class="space-y-6">
                     <div>
                         <label for="login-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
-                        <input type="email" id="login-email" required
+                        <input type="email" id="login-email"   
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             placeholder="your@email.com">
                     </div>
                     
                     <div>
                         <label for="login-password" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
-                        <input type="password" id="login-password" required
+                        <input type="password" id="login-password"   
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             placeholder="••••••••">
                         <div class="flex justify-end mt-2">
@@ -105,14 +105,14 @@ session_start();
                 <form id="signup-form-submit" class="space-y-6">
                     <div>
                         <label for="signup-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
-                        <input type="email" id="signup-email" required
+                        <input type="email" id="signup-email"   
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             placeholder="your@email.com">
                     </div>
                     
                     <div>
                         <label for="signup-password" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
-                        <input type="password" id="signup-password" required
+                        <input type="password" id="signup-password"   
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             placeholder="••••••••">
                         <p class="mt-2 text-xs text-gray-500 dark:text-gray-400">Minimum 8 characters with at least one number</p>
@@ -120,7 +120,7 @@ session_start();
                     
                     <div>
                         <label for="signup-confirm-password" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Confirm Password</label>
-                        <input type="password" id="signup-confirm-password" required
+                        <input type="password" id="signup-confirm-password"   
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             placeholder="••••••••">
                     </div>
@@ -160,6 +160,6 @@ session_start();
   <p class="font-semibold" id="creditText"></p>
   <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
 </div>
-<script src="./ts/auth>.ts"></script>
+<script src="./ts/auth.ts"></script>
 </body>
 </html>
