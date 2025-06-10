@@ -160,5 +160,6 @@ session_start();
   <p class="font-semibold" id="creditText"></p>
   <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
 </div>
+<script src="./ts/auth>.ts"></script>
 </body>
 </html>
