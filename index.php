@@ -84,8 +84,8 @@ error_reporting(0);
             <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
             <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Contact</a>
             <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
-                <a href="#" class="block w-full px-4 py-2 text-center border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">Sign In</a>
-                <a href="#" class="block w-full mt-3 px-4 py-2 text-center border border-transparent text-sm font-medium rounded-md shadow-sm text-blue-700 bg-blue-100 hover:bg-blue-200 dark:text-white dark:bg-blue-600 dark:hover:bg-blue-700">Get Started</a>
+                <a href="auth.php" class="block w-full px-4 py-2 text-center border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">Sign In</a>
+                <a href="auth.php" class="block w-full mt-3 px-4 py-2 text-center border border-transparent text-sm font-medium rounded-md shadow-sm text-blue-700 bg-blue-100 hover:bg-blue-200 dark:text-white dark:bg-blue-600 dark:hover:bg-blue-700">Get Started</a>
             </div>
         </div>
     </div>
