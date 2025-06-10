@@ -869,7 +869,7 @@
         <ul class="mt-4 space-y-3">
           <li class="flex items-start">
             <i class="fas fa-envelope mt-1 mr-2 text-blue-400"></i>
-            <span>hello@cyrustech.com</span>
+            <span>admin@cyrus.com</span>
           </li>
           <li class="flex items-start">
             <i class="fas fa-phone-alt mt-1 mr-2 text-blue-400"></i>
@@ -937,6 +937,6 @@
 </script>
     <script src="./ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
+    <div style="height:100px"></div>
 </body>
 </html>
