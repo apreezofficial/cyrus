@@ -317,17 +317,20 @@
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <!-- Instructor 1 -->
             <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                <div class="h-64 bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
+                <div class="h-64 bg-gradient-to-br from-teal-200 to-teal-800 flex items-center justify-center">
                     <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
-                         src="https://randomuser.me/api/portraits/women/43.jpg" 
-                         alt="Sarah Chen">
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR17pSsaGjzAeU50waVPpLRgWeMPswuEv1T4oAycnEh0Q&s" 
+                         alt="Precious Adedokun">
                 </div>
                 <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Sarah Chen</h3>
-                    <p class="text-blue-600 dark:text-blue-400 font-medium">Senior Frontend Engineer</p>
-                    <p class="text-gray-600 dark:text-gray-300 mt-2">Former React Lead @Google</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Precious Adedokun</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Senior FullStack Engineer</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Fullstack Developer @proforms</p>
                     <div class="flex justify-center space-x-4 mt-4">
-                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                                              <a href="https://preciousadedokun.com.ng" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-code fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/apreezoficial" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
                             <i class="fab fa-github fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
@@ -426,7 +429,14 @@
         </div>
     </div>
 </section>
-Still under progress by Cyrus <?php echo "2025" ?> represented by Apcodesphere
+<div class="fixed bottom-4 right-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-2xl px-4 py-2 text-sm text-gray-800 dark:text-gray-200 transition-all">
+    <p class="font-semibold">
+        Still under progress by <a class="text-blue-600 dark:text-blue-400" href="#">Cyrus</span> &copy; <?php echo date('Y'); ?> 
+    </p>
+    <p class="text-xs text-gray-500 dark:text-gray-400">
+        Represented by <a class="font-bold text-purple-600 dark:text-purple-400" href="https://preciousadedokun.com.ng">APCodeSphere</a>
+    </p>
+</div>
         <!-- JavaScript files -->
     <script src="/ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
