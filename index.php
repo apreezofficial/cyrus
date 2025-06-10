@@ -336,7 +336,7 @@
                         <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                        <a href="https://x.com/apcodesphere" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
                             <i class="fab fa-twitter fa-lg"></i>
                         </a>
                     </div>
