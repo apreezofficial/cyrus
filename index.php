@@ -561,7 +561,240 @@
   <p class="font-semibold" id="creditText"></p>
   <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
 </div>
-    <script src="/ts/app.ts" defer></script>
+<!-- FAQ Section -->
+<section class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Frequently Asked Questions
+            </h2>
+            <p class="mt-4 text-xl text-gray-500 dark:text-gray-300">
+                Find quick answers to common questions about Cyrus Tech.
+            </p>
+        </div>
+
+        <div class="space-y-4" x-data="{ openFaq: null }">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow overflow-hidden">
+                <button 
+                    @click="openFaq === 1 ? openFaq = null : openFaq = 1"
+                    class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+                >
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                        How do I enroll in a course?
+                    </h3>
+                    <svg 
+                        class="h-6 w-6 text-gray-500 dark:text-gray-300 transform transition-transform duration-200" 
+                        :class="{ 'rotate-180': openFaq === 1 }" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div 
+                    x-show="openFaq === 1" 
+                    x-collapse
+                    class="px-6 pb-6 pt-0 text-gray-600 dark:text-gray-300"
+                >
+                    <p>
+                        Click the "Enroll Now" button on any course page, choose your payment plan, and create an account. You’ll get immediate access to course materials upon payment confirmation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow overflow-hidden">
+                <button 
+                    @click="openFaq === 2 ? openFaq = null : openFaq = 2"
+                    class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+                >
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                        Do you offer certificates upon completion?
+                    </h3>
+                    <svg 
+                        class="h-6 w-6 text-gray-500 dark:text-gray-300 transform transition-transform duration-200" 
+                        :class="{ 'rotate-180': openFaq === 2 }" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div 
+                    x-show="openFaq === 2" 
+                    x-collapse
+                    class="px-6 pb-6 pt-0 text-gray-600 dark:text-gray-300"
+                >
+                    <p>
+                        Yes! All courses include a verifiable digital certificate upon completion. Certificates require passing all assignments and a final project.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow overflow-hidden">
+                <button 
+                    @click="openFaq === 3 ? openFaq = null : openFaq = 3"
+                    class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+                >
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                        Can I get a refund if I’m unsatisfied?
+                    </h3>
+                    <svg 
+                        class="h-6 w-6 text-gray-500 dark:text-gray-300 transform transition-transform duration-200" 
+                        :class="{ 'rotate-180': openFaq === 3 }" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div 
+                    x-show="openFaq === 3" 
+                    x-collapse
+                    class="px-6 pb-6 pt-0 text-gray-600 dark:text-gray-300"
+                >
+                    <p>
+                        We offer a 14-day money-back guarantee. If you’re unsatisfied within the first two weeks of enrollment, email us for a full refund—no questions asked.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow overflow-hidden">
+                <button 
+                    @click="openFaq === 4 ? openFaq = null : openFaq = 4"
+                    class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+                >
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                        Are there prerequisites for courses?
+                    </h3>
+                    <svg 
+                        class="h-6 w-6 text-gray-500 dark:text-gray-300 transform transition-transform duration-200" 
+                        :class="{ 'rotate-180': openFaq === 4 }" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div 
+                    x-show="openFaq === 4" 
+                    x-collapse
+                    class="px-6 pb-6 pt-0 text-gray-600 dark:text-gray-300"
+                >
+                    <p>
+                        Beginner courses require no prior experience. Advanced courses list prerequisites on their description pages (e.g., "Python basics" for Data Science).
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow overflow-hidden">
+                <button 
+                    @click="openFaq === 5 ? openFaq = null : openFaq = 5"
+                    class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+                >
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                        How long do I have access to course materials?
+                    </h3>
+                    <svg 
+                        class="h-6 w-6 text-gray-500 dark:text-gray-300 transform transition-transform duration-200" 
+                        :class="{ 'rotate-180': openFaq === 5 }" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div 
+                    x-show="openFaq === 5" 
+                    x-collapse
+                    class="px-6 pb-6 pt-0 text-gray-600 dark:text-gray-300"
+                >
+                    <p>
+                        <strong>Lifetime access!</strong> Once enrolled, you can revisit course materials anytime, including future updates. Downloadable resources are yours to keep forever.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-12 text-center">
+            <p class="text-gray-500 dark:text-gray-300 mb-4">
+                Still have questions?
+            </p>
+            <a 
+                href="#" 
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-200"
+            >
+                Contact Support
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-800 dark:to-indigo-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-8 md:p-10 transform hover:scale-[1.01] transition-transform duration-300">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Stay Updated
+            </h2>
+            <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
+                Subscribe to our newsletter for course updates, tech insights, and exclusive offers.
+            </p>
+            
+            <form class="mt-8 sm:flex max-w-md mx-auto">
+                <div class="flex-grow">
+                    <label for="email" class="sr-only">Email address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        required
+                        class="w-full px-5 py-3 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+                        placeholder="Enter your email"
+                    >
+                </div>
+                <button 
+                    type="submit" 
+                    class="mt-3 sm:mt-0 sm:ml-3 flex-shrink-0 px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+                >
+                    Subscribe
+                </button>
+            </form>
+
+            <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                We respect your privacy. Unsubscribe at any time.
+            </p>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="mt-12 flex flex-wrap justify-center gap-6">
+            <div class="flex items-center">
+                <svg class="h-8 w-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+                <span class="ml-2 text-white font-medium">4.9/5 (2,000+ Reviews)</span>
+            </div>
+            <div class="flex items-center">
+                <svg class="h-8 w-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="ml-2 text-white font-medium">14-Day Guarantee</span>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="./ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
