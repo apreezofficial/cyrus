@@ -30,9 +30,15 @@ session_start();
             transform: translateY(0);
         }
     </style>
+    <script>
+  tailwind.config = { darkMode: 'class' }
+</script>
+<script src="./ts/app.ts" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen flex items-center justify-center p-4">
     <div class="w-full max-w-md mx-auto">
+       
         <!-- Auth Toggle Buttons -->
         <div class="flex mb-8 rounded-lg bg-gray-200 dark:bg-gray-700 p-1">
             <button id="login-tab" class="flex-1 py-2 px-4 rounded-md font-medium text-center transition-colors bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 shadow-sm">
@@ -156,10 +162,6 @@ session_start();
             </div>
         </div>
     </div>
-<div id="madd-credit" class="fixed bottom-4 right-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-2xl px-4 py-2 text-sm text-gray-800 dark:text-gray-200 transition-all">
-  <p class="font-semibold" id="creditText"></p>
-  <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
-</div>
 <script src="./ts/auth.ts"></script>
 </body>
 </html>
