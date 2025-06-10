@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tech School - Learn modern web development and programming skills">
+    <meta name="description" content="Cyrus - Learn modern web development and programming skills">
     <meta name="keywords" content="coding, programming, web development, tech education">
     <meta name="author" content="Your Name">
     
@@ -89,8 +89,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Navbar -->
     <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 fixed w-full z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -133,8 +131,93 @@
             </div>
         </div>
     </nav>
+    
+    <section class="pt-24 pb-12 md:pt-32 md:pb-16 relative overflow-hidden">
+    <!-- Animated gradient background -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div id="animated-gradient" class="absolute inset-0 opacity-30 dark:opacity-20"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left content -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Master</span>
+                    <span class="block">Modern Tech Skills</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                    Join Cyrus Tech to learn from industry experts and build real-world projects that get you hired.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#" id="cta-button" class="px-8 py-3 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        Start Learning Free
+                    </a>
+                    <a href="#" class="px-8 py-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-300">
+                        Explore Courses
+                    </a>
+                </div>
+                
+                <!-- Trust indicators -->
+                <div class="mt-12 flex flex-col sm:flex-row items-center gap-6 text-sm text-gray-500 dark:text-gray-400">
+                    <div class="flex items-center">
+                        <div class="flex -space-x-2">
+                            <img class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                            <img class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                            <img class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+                        </div>
+                        <span class="ml-3">Join 10,000+ students</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <span class="ml-1">4.9/5 (2,500+ reviews)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right content - Interactive code editor preview -->
+            <div class="relative">
+                <div class="bg-gray-800 rounded-xl shadow-2xl overflow-hidden">
+                    <!-- Editor header -->
+                    <div class="flex items-center px-4 py-3 bg-gray-700">
+                        <div class="flex space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="ml-4 text-sm text-gray-300">script.js</div>
+                    </div>
+                    
+                    <!-- Code editor -->
+                    <div class="p-4 font-mono text-sm">
+                        <pre id="typewriter" class="text-gray-300 overflow-hidden h-64"></pre>
+                    </div>
+                    
+                    <!-- Terminal output -->
+                    <div class="border-t border-gray-700 px-4 py-3 bg-gray-900 text-green-400 font-mono text-sm">
+                        <div id="terminal-output">$ Initializing learning environment...</div>
+                    </div>
+                </div>
+                
+                <!-- Floating badge -->
+                <div id="floating-badge" class="absolute -bottom-4 -right-4 bg-white dark:bg-gray-700 shadow-lg rounded-full px-4 py-2 flex items-center transform rotate-0 hover:rotate-6 transition-transform duration-300">
+                    <div class="bg-blue-100 dark:bg-blue-900 rounded-full p-1 mr-2">
+                        <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <span class="font-medium text-gray-800 dark:text-gray-200">Live Preview</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- JavaScript files -->
-    <script src="/scripts/main.js" defer></script>
+    <script src="/ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
