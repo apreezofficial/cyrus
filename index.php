@@ -794,58 +794,7 @@
         </div>
     </div>
 </section>
-<!-- Newsletter Section -->
-<section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-800 dark:to-indigo-900">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-8 md:p-10 transform hover:scale-[1.01] transition-transform duration-300">
-            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-                Stay Updated
-            </h2>
-            <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
-                Subscribe to our newsletter for course updates, tech insights, and exclusive offers.
-            </p>
-            
-            <form class="mt-8 sm:flex max-w-md mx-auto">
-                <div class="flex-grow">
-                    <label for="email" class="sr-only">Email address</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        required
-                        class="w-full px-5 py-3 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
-                        placeholder="Enter your email"
-                    >
-                </div>
-                <button 
-                    type="submit" 
-                    class="mt-3 sm:mt-0 sm:ml-3 flex-shrink-0 px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
-                >
-                    Subscribe
-                </button>
-            </form>
-
-            <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                We respect your privacy. Unsubscribe at any time.
-            </p>
-        </div>
-
-        <!-- Trust Badges -->
-        <div class="mt-12 flex flex-wrap justify-center gap-6">
-            <div class="flex items-center">
-                <svg class="h-8 w-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <span class="ml-2 text-white font-medium">4.9/5 (2,000+ Reviews)</span>
-            </div>
-            <div class="flex items-center">
-                <svg class="h-8 w-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <span class="ml-2 text-white font-medium">14-Day Guarantee</span>
-            </div>
-        </div>
-    </div>
-</section>
+xbxbx
     <script src="./ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
