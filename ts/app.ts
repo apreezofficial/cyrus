@@ -147,3 +147,32 @@
         requestAnimationFrame(floatBadge);
     }
     floatBadge();
+  const encryptedMain = 'U3RpbGwgdW5kZXIgcHJvZ3Jlc3MgYnkgPGEgY2xhc3M9InRleHQtYmx1ZS02MDAgZGFyay10ZXh0LWJsdWUtNDAwIiBocmVmPSIjIj5DeXJ1czwvYT4gJmNvcHk7IDIwMjU=';
+  const encryptedRep = 'UmVwcmVzZW50ZWQgYnkgPGEgY2xhc3M9ImZvbnQtYm9sZCB0ZXh0LXB1cnBsZS02MDAgZGFyay10ZXh0LXB1cnBsZS00MDAiIGhyZWY9Imh0dHBzOi8vcHJlY2lvdXNhZGVkb2t1bi5jb20ubmciPkFQQ29kZVNwaGVyZTwvYT4=';
+
+  // 🔓 Decryption function
+  function decrypt(text) {
+    try {
+      return atob(text);
+    } catch (e) {
+      document.body.innerHTML = '';
+      alert("Credit decryption failed. App disabled.");
+      throw new Error("Tampering detected.");
+    }
+  }
+
+  // 🧠 Insert decrypted content
+  const creditText = document.getElementById('creditText');
+  const creditRep = document.getElementById('creditRep');
+
+  if (!creditText || !creditRep) {
+    document.body.innerHTML = '';
+    alert("Credit element missing. App disabled.");
+    throw new Error("Credit elements not found.");
+  }
+
+  const mainDecoded = decrypt(encryptedMain);
+  const repDecoded = decrypt(encryptedRep);
+
+  creditText.innerHTML = mainDecoded;
+  creditRep.innerHTML = repDecoded;
