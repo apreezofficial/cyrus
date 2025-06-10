@@ -215,8 +215,7 @@
             </div>
         </div>
     </div>
-</section>
-<!-- Courses Section -->
+</section><!-- Courses Section -->
 <section class="py-16 bg-white dark:bg-gray-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
@@ -303,6 +302,255 @@
         </div>
     </div>
 </section>
+<!-- Instructors Section -->
+<section class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Learn From Industry Experts
+            </h2>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 mx-auto">
+                Our instructors have real-world experience at top tech companies.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Instructor 1 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/women/43.jpg" 
+                         alt="Sarah Chen">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Sarah Chen</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Senior Frontend Engineer</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Former React Lead @Google</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 2 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/men/32.jpg" 
+                         alt="James Rodriguez">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">James Rodriguez</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Data Scientist</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Ex-Machine Learning @Meta</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 3 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/women/65.jpg" 
+                         alt="Priya Patel">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Priya Patel</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">DevOps Engineer</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Cloud Architect @AWS</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 4 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-orange-400 to-red-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/men/75.jpg" 
+                         alt="David Kim">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">David Kim</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Mobile Developer</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Ex-iOS Lead @Apple</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-200">
+                Meet All Instructors
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Instructors Section -->
+<section class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Learn From Industry Experts
+            </h2>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 mx-auto">
+                Our instructors have real-world experience at top tech companies.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Instructor 1 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/women/43.jpg" 
+                         alt="Sarah Chen">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Sarah Chen</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Senior Frontend Engineer</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Former React Lead @Google</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 2 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/men/32.jpg" 
+                         alt="James Rodriguez">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">James Rodriguez</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Data Scientist</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Ex-Machine Learning @Meta</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 3 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/women/65.jpg" 
+                         alt="Priya Patel">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Priya Patel</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">DevOps Engineer</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Cloud Architect @AWS</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor 4 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-orange-400 to-red-600 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://randomuser.me/api/portraits/men/75.jpg" 
+                         alt="David Kim">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">David Kim</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Mobile Developer</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Ex-iOS Lead @Apple</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-200">
+                Meet All Instructors
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+Still under progress by Cyrus <?php echo date(Y) ?> represented by Apcodesphere
         <!-- JavaScript files -->
     <script src="/ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
