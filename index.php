@@ -18,8 +18,6 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -36,13 +34,11 @@
             }
         }
     </script>
-    <!-- Tailwind CSS -->
 <script>
   tailwind.config = { darkMode: 'class' }
 </script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -328,7 +324,7 @@
                     <p class="text-gray-600 dark:text-gray-300 mt-2">Fullstack Developer @proforms</p>
                     <div class="flex justify-center space-x-4 mt-4">
                                               <a href="https://preciousadedokun.com.ng" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
-                            <i class="fab fa-code fa-lg"></i>
+                            <i class="fa fa-code fa-lg"></i>
                         </a>
                         <a href="https://github.com/apreezoficial" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
                             <i class="fab fa-github fa-lg"></i>
@@ -345,13 +341,13 @@
 
             <!-- Instructor 2 -->
             <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                <div class="h-64 bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center">
+                <div class="h-64 bg-gradient-to-br from-blue-200 to-blue-600 flex items-center justify-center">
                     <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
                          src="https://randomuser.me/api/portraits/men/32.jpg" 
-                         alt="James Rodriguez">
+                         alt="John Doe">
                 </div>
                 <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">James Rodriguez</h3>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">John Doe</h3>
                     <p class="text-blue-600 dark:text-blue-400 font-medium">Data Scientist</p>
                     <p class="text-gray-600 dark:text-gray-300 mt-2">Ex-Machine Learning @Meta</p>
                     <div class="flex justify-center space-x-4 mt-4">
@@ -429,11 +425,142 @@
         </div>
     </div>
 </section>
+<!-- Testimonials Section -->
+<section class="py-16 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                What Our Students Say
+            </h2>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 mx-auto">
+                Join thousands of students who transformed their careers with Cyrus Tech.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Testimonial 1 -->
+            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img class="h-12 w-12 rounded-full object-cover" 
+                         src="https://randomuser.me/api/portraits/women/28.jpg" 
+                         alt="Emma Watson">
+                    <div class="ml-4">
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Emma Watson</h4>
+                        <div class="flex items-center mt-1">
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-500 dark:text-gray-300 text-sm ml-2">5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 italic">
+                    "The Full-Stack course changed my career! I went from zero coding experience to landing a developer job in 6 months. The projects were real-world and the instructors were incredibly supportive."
+                </p>
+                <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                    Completed: Full-Stack Web Development
+                </p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img class="h-12 w-12 rounded-full object-cover" 
+                         src="https://randomuser.me/api/portraits/men/45.jpg" 
+                         alt="Michael Chen">
+                    <div class="ml-4">
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Michael Chen</h4>
+                        <div class="flex items-center mt-1">
+                            <div class="flex text-yellow-400">
+                                <!-- 4.5 star rating -->
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                            <span class="text-gray-500 dark:text-gray-300 text-sm ml-2">4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 italic">
+                    "As a self-taught programmer, I needed structure. The Data Science course gave me exactly that - clear explanations, practical exercises, and career guidance that helped me transition into AI."
+                </p>
+                <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                    Completed: Data Science Fundamentals
+                </p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img class="h-12 w-12 rounded-full object-cover" 
+                         src="https://randomuser.me/api/portraits/women/62.jpg" 
+                         alt="Priya Nair">
+                    <div class="ml-4">
+                        <h4 class="font-semibold text-gray-900 dark:text-white">Priya Nair</h4>
+                        <div class="flex items-center mt-1">
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                            <span class="text-gray-500 dark:text-gray-300 text-sm ml-2">5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 italic">
+                    "The mobile development course exceeded my expectations. Within 3 months of completing it, I published my first app on the App Store! The React Native content was particularly outstanding."
+                </p>
+                <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                    Completed: Mobile App Development
+                </p>
+            </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-600 dark:text-blue-400">10K+</p>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">Students Enrolled</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-600 dark:text-blue-400">4.9★</p>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">Average Rating</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-600 dark:text-blue-400">92%</p>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">Career Impact</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-600 dark:text-blue-400">15+</p>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">Countries</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <div id="madd-credit" class="fixed bottom-4 right-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-2xl px-4 py-2 text-sm text-gray-800 dark:text-gray-200 transition-all">
   <p class="font-semibold" id="creditText"></p>
   <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
 </div>
-        <!-- JavaScript files -->
     <script src="/ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
