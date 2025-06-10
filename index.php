@@ -873,11 +873,11 @@
           </li>
           <li class="flex items-start">
             <i class="fas fa-phone-alt mt-1 mr-2 text-blue-400"></i>
-            <span>+1 (555) 123-4567</span>
+            <span>+234 906 477 9856</span>
           </li>
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-400"></i>
-            <span>San Francisco, CA</span>
+            <span>Ekiti, Nigeria</span>
           </li>
         </ul>
       </div>
@@ -886,7 +886,7 @@
     <!-- Bottom Bar -->
     <div class="mt-16 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
       <p class="text-gray-400 text-sm">
-        &copy; 2023 Cyrus Tech. All rights reserved.
+        &copy; <?php echo ('Y') ?> Cyrus Tech. All rights reserved.
       </p>
       
       <div class="mt-4 md:mt-0 flex items-center space-x-6">
@@ -906,35 +906,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-  // Footer theme toggle functionality
-  const footerToggle = document.getElementById('theme-toggle-footer');
-  const footerDarkIcon = document.getElementById('theme-toggle-dark-icon-footer');
-  const footerLightIcon = document.getElementById('theme-toggle-light-icon-footer');
-
-  // Set initial icon based on current theme
-  if (document.documentElement.classList.contains('dark')) {
-    footerLightIcon.classList.remove('hidden');
-  } else {
-    footerDarkIcon.classList.remove('hidden');
-  }
-
-  footerToggle.addEventListener('click', function() {
-    // Toggle icons
-    footerDarkIcon.classList.toggle('hidden');
-    footerLightIcon.classList.toggle('hidden');
-    
-    // Toggle theme
-    if (document.documentElement.classList.contains('dark')) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('color-theme', 'light');
-    } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('color-theme', 'dark');
-    }
-  });
-</script>
     <script src="./ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <div style="height:100px"></div>
