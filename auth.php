@@ -33,10 +33,13 @@ session_start();
     <script>
   tailwind.config = { darkMode: 'class' }
 </script>
-<script src="./ts/app.ts" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen flex items-center justify-center p-4">
+  <div id="madd-credit" class="fixed bottom-4 right-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-2xl px-4 py-2 text-sm text-gray-800 dark:text-gray-200 transition-all">
+  <p class="font-semibold" id="creditText"></p>
+  <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
+</div>
     <div class="w-full max-w-md mx-auto">
        
         <!-- Auth Toggle Buttons -->
