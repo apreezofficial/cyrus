@@ -90,7 +90,7 @@ function showToast(icon, title, message, isSuccess = false) {
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000,
+        timer: 2000,
         timerProgressBar: true,
         background: isSuccess ? 
             'linear-gradient(to right, #2563eb, #1e40af)' : 
@@ -105,7 +105,6 @@ function showToast(icon, title, message, isSuccess = false) {
     
     toast.fire({
         icon: icon,
-        title: title,
         text: message
     })
 }
