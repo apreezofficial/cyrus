@@ -1,3 +1,52 @@
+    // Theme Management System
+(function() {
+    // Check for saved theme preference or system preference
+    const storedTheme = localStorage.getItem('color-theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Determine initial theme
+    let theme = 'light';
+    if (storedTheme) {
+        theme = storedTheme;
+    } else if (systemPrefersDark) {
+        theme = 'dark';
+    }
+    
+    // Apply the theme
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    }
+    
+    // Initialize
+    applyTheme(theme);
+    
+    // Watch for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        // Only respond if user hasn't set a preference
+        if (!localStorage.getItem('color-theme')) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            applyTheme(newTheme);
+        }
+    });
+    
+    // Optional: Make this function available globally if you need to change theme programmatically
+    window.setTheme = function(newTheme) {
+        if (newTheme === 'dark' || newTheme === 'light') {
+            localStorage.setItem('color-theme', newTheme);
+            applyTheme(newTheme);
+        } else if (newTheme === 'system') {
+            localStorage.removeItem('color-theme');
+            const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            applyTheme(systemTheme);
+        }
+    };
+})();
         // Form toggle functionality
         const loginTab = document.getElementById('login-tab');
         const signupTab = document.getElementById('signup-tab');
@@ -151,3 +200,32 @@ document.getElementById('signup-form-submit').addEventListener('submit', functio
         signupBtn.disabled = false;
     });
 });
+const encryptedMain = 'U3RpbGwgdW5kZXIgcHJvZ3Jlc3MgYnkgPGEgY2xhc3M9InRleHQtYmx1ZS02MDAgZGFyay10ZXh0LWJsdWUtNDAwIiBocmVmPSIjIj5DeXJ1czwvYT4gJmNvcHk7IDIwMjU=';
+  const encryptedRep = 'UmVwcmVzZW50ZWQgYnkgPGEgY2xhc3M9ImZvbnQtYm9sZCB0ZXh0LXB1cnBsZS02MDAgZGFyay10ZXh0LXB1cnBsZS00MDAiIGhyZWY9Imh0dHBzOi8vcHJlY2lvdXNhZGVkb2t1bi5jb20ubmciPkFQQ29kZVNwaGVyZTwvYT4=';
+
+  // 🔓 Decryption function
+  function decrypt(text) {
+    try {
+      return atob(text);
+    } catch (e) {
+      document.body.innerHTML = '';
+      alert("Credit decryption failed. App disabled.");
+      throw new Error("Tampering detected.");
+    }
+  }
+
+  // 🧠 Insert decrypted content
+  const creditText = document.getElementById('creditText');
+  const creditRep = document.getElementById('creditRep');
+
+  if (!creditText || !creditRep) {
+    document.body.innerHTML = '';
+    alert("Credit element missing. App disabled.");
+    throw new Error("Credit elements not found.");
+  }
+
+  const mainDecoded = decrypt(encryptedMain);
+  const repDecoded = decrypt(encryptedRep);
+
+  creditText.innerHTML = mainDecoded;
+  creditRep.innerHTML = repDecoded;
