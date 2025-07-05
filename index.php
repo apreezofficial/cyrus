@@ -7,7 +7,7 @@ error_reporting(0);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cyrus - Learn modern web development and programming skills">
+    <meta name="description" content="InnovaTech - Learn modern web development and programming skills">
     <meta name="keywords" content="coding, programming, web development, tech education">
     <meta name="author" content="Your Name">
     
@@ -51,7 +51,7 @@ error_reporting(0);
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/main.css">
     
-    <title>Cyrus | Home</title>
+    <title>InnovaTech | Home</title>
         <script>
         // Check for saved theme preference or system preference
         if (localStorage.getItem('color-theme') === 'dark' || 
@@ -70,7 +70,7 @@ error_reporting(0);
     <div id="mobile-sidebar" class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-gray-800 shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-30">
         <div class="flex items-center justify-between h-16 px-4 border-b border-gray-200 dark:border-gray-700">
             <div class="flex items-center space-x-2">
-                <span class="text-xl font-bold text-gray-900 dark:text-white">Cyrus</span>
+                <span class="text-xl font-bold text-gray-900 dark:text-white">InnovaTech</span>
                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tech</span>
             </div>
             <button id="mobile-sidebar-close" class="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
@@ -100,7 +100,7 @@ error_reporting(0);
                         </svg>
                     </button>
                     <a href="#" class="flex items-center space-x-2">
-                        <span class="text-xl font-bold text-gray-900 dark:text-white">Cyrus</span>
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">InnovaTech</span>
                         <span class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Tech</span>
                     </a>
                 </div>
@@ -148,7 +148,7 @@ error_reporting(0);
                 </h1>
                 
                 <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
-                    Join Cyrus Tech to learn from industry experts and build real-world projects that get you hired.
+                    Join InnovaTech to learn from industry experts and build real-world projects that get you hired.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -315,35 +315,7 @@ error_reporting(0);
         </div>
 
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <!-- Instructor 1 -->
-            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                <div class="h-64 bg-gradient-to-br from-teal-200 to-teal-800 flex items-center justify-center">
-                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
-                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR17pSsaGjzAeU50waVPpLRgWeMPswuEv1T4oAycnEh0Q&s" 
-                         alt="Precious Adedokun">
-                </div>
-                <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Precious Adedokun</h3>
-                    <p class="text-blue-600 dark:text-blue-400 font-medium">Senior FullStack Engineer</p>
-                    <p class="text-gray-600 dark:text-gray-300 mt-2">Fullstack Developer @proforms</p>
-                    <div class="flex justify-center space-x-4 mt-4">
-                                              <a href="https://preciousadedokun.com.ng" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
-                            <i class="fa fa-code fa-lg"></i>
-                        </a>
-                        <a href="https://github.com/apreezoficial" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
-                            <i class="fab fa-github fa-lg"></i>
-                        </a>
-                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
-                            <i class="fab fa-linkedin fa-lg"></i>
-                        </a>
-                        <a href="https://x.com/apcodesphere" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
-                            <i class="fab fa-twitter fa-lg"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instructor 2 -->
+                      <!-- Instructor 2 -->
             <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
                 <div class="h-64 bg-gradient-to-br from-blue-200 to-blue-600 flex items-center justify-center">
                     <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
@@ -362,6 +334,33 @@ error_reporting(0);
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Instructor 1 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <div class="h-64 bg-gradient-to-br from-teal-200 to-teal-800 flex items-center justify-center">
+                    <img class="h-48 w-48 rounded-full object-cover border-4 border-white dark:border-gray-600 shadow-md" 
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe62Yu-w9IZVMcvqY4Pnkilph31lhR8OYEhY4XEK9O_Q&s" 
+                         alt="Precious Adedokun">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Precious Adedokun</h3>
+                    <p class="text-blue-600 dark:text-blue-400 font-medium">Co Founder</p>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Fullstack Developer @proforms</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                                              <a href="https://preciousadedokun.com.ng" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fa fa-code fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/apreezoficial" class="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-400 dark:hover:text-blue-300">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://x.com/apcodesphere" class="text-gray-500 hover:text-red-500 dark:hover:text-red-400">
                             <i class="fab fa-twitter fa-lg"></i>
                         </a>
                     </div>
@@ -437,7 +436,7 @@ error_reporting(0);
                 What Our Students Say
             </h2>
             <p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 mx-auto">
-                Join thousands of students who transformed their careers with Cyrus Tech.
+                Join thousands of students who transformed their careers with InnovaTech.
             </p>
         </div>
 
@@ -561,7 +560,7 @@ error_reporting(0);
         </div>
     </div>
 </section>
-<div id="madd-credit" class="fixed bottom-4 right-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-2xl px-4 py-2 text-sm text-gray-800 dark:text-gray-200 transition-all">
+<div id="madd-credit" class="hidden fixed bottom-4 right-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-2xl px-4 py-2 text-sm text-gray-800 dark:text-gray-200 transition-all">
   <p class="font-semibold" id="creditText"></p>
   <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
 </div>
@@ -573,7 +572,7 @@ error_reporting(0);
                 Frequently Asked Questions
             </h2>
             <p class="mt-4 text-xl text-gray-500 dark:text-gray-300">
-                Find quick answers to common questions about Cyrus Tech.
+                Find quick answers to common questions about InnovaTech.
             </p>
         </div>
 
@@ -806,7 +805,7 @@ error_reporting(0);
       <!-- Brand Column -->
       <div class="col-span-2 lg:col-span-1">
         <div class="flex items-center">
-          <span class="text-2xl font-bold text-white">Cyrus</span>
+          <span class="text-2xl font-bold text-white">InnovaTech</span>
           <span class="ml-2 bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full">Tech</span>
         </div>
         <p class="mt-4">
@@ -873,7 +872,7 @@ error_reporting(0);
         <ul class="mt-4 space-y-3">
           <li class="flex items-start">
             <i class="fas fa-envelope mt-1 mr-2 text-blue-400"></i>
-            <span>admin@cyrus.com</span>
+            <span>admin@InnovaTech.com</span>
           </li>
           <li class="flex items-start">
             <i class="fas fa-phone-alt mt-1 mr-2 text-blue-400"></i>
@@ -890,7 +889,7 @@ error_reporting(0);
     <!-- Bottom Bar -->
     <div class="mt-16 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
       <p class="text-gray-400 text-sm">
-        &copy; <?php echo date('Y') ?> Cyrus Tech. All rights reserved.
+        &copy; <?php echo date('Y') ?> InnovaTech. All rights reserved.
       </p>
     </div>
   </div>

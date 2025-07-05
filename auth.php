@@ -1,7 +1,3 @@
-<?php
-// auth.php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en" class="light">
 <head>
@@ -167,6 +163,218 @@ session_start();
   <p class="font-semibold" id="creditText"></p>
   <p class="text-xs text-gray-500 dark:text-gray-400" id="creditRep"></p>
 </div>
-<script src="./ts/auth.ts"></script>
+<script>
+  // THEME MANAGEMENT SYSTEM
+  (function () {
+    const storedTheme = localStorage.getItem('color-theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let theme = storedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+    function applyTheme(theme) {
+      document.documentElement.classList.toggle('dark', theme === 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    applyTheme(theme);
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      if (!localStorage.getItem('color-theme')) {
+        applyTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+
+    window.setTheme = function (newTheme) {
+      if (newTheme === 'dark' || newTheme === 'light') {
+        localStorage.setItem('color-theme', newTheme);
+        applyTheme(newTheme);
+      } else if (newTheme === 'system') {
+        localStorage.removeItem('color-theme');
+        applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      }
+    };
+  })();
+
+  // FORM TOGGLE FUNCTIONALITY
+  const loginTab = document.getElementById('login-tab');
+  const signupTab = document.getElementById('signup-tab');
+  const loginForm = document.getElementById('login-form');
+  const signupForm = document.getElementById('signup-form');
+  const showLogin = document.getElementById('show-login');
+  const showSignup = document.getElementById('show-signup');
+
+  function setTabState(activeTab, inactiveTab) {
+    activeTab.classList.add('bg-white', 'dark:bg-gray-800', 'text-blue-600', 'dark:text-blue-400', 'shadow-sm');
+    activeTab.classList.remove('text-gray-600', 'dark:text-gray-300', 'hover:text-gray-900', 'dark:hover:text-white');
+    inactiveTab.classList.remove('bg-white', 'dark:bg-gray-800', 'text-blue-600', 'dark:text-blue-400', 'shadow-sm');
+    inactiveTab.classList.add('text-gray-600', 'dark:text-gray-300', 'hover:text-gray-900', 'dark:hover:text-white');
+  }
+
+  function showLoginForm() {
+    setTabState(loginTab, signupTab);
+    loginForm.classList.replace('auth-hidden', 'auth-visible');
+    signupForm.classList.replace('auth-visible', 'auth-hidden');
+  }
+
+  function showSignupForm() {
+    setTabState(signupTab, loginTab);
+    signupForm.classList.replace('auth-hidden', 'auth-visible');
+    loginForm.classList.replace('auth-visible', 'auth-hidden');
+  }
+
+  loginTab?.addEventListener('click', showLoginForm);
+  signupTab?.addEventListener('click', showSignupForm);
+  showLogin?.addEventListener('click', showLoginForm);
+  showSignup?.addEventListener('click', showSignupForm);
+
+  // TOAST FUNCTION
+  function showToast(icon, title, message, isSuccess = false) {
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 2500,
+      timerProgressBar: true,
+      icon: icon,
+      title: message,
+      background: isSuccess
+        ? 'linear-gradient(to right, #2563eb, #1e40af)'
+        : 'linear-gradient(to right, #dc2626, #b91c1c)',
+      color: '#ffffff',
+      iconColor: '#ffffff',
+      didOpen: toast => {
+        toast.addEventListener('mouseenter', Swal.stopTimer);
+        toast.addEventListener('mouseleave', Swal.resumeTimer);
+      }
+    });
+  }
+
+  // LOGIN SUBMIT
+  loginForm?.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById('login-email').value.trim();
+    const password = document.getElementById('login-password').value;
+
+    const loginBtn = loginForm.querySelector('button[type="submit"]');
+    const originalBtnText = loginBtn.innerHTML;
+
+    if (!email || !password) {
+      showToast('error', 'Validation Error', 'Email and password are required');
+      return;
+    }
+
+    loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Logging in...';
+    loginBtn.disabled = true;
+
+    try {
+      const response = await fetch('login.php', {
+        method: 'POST',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      let data;
+      try {
+        data = await response.json();
+      } catch {
+        throw new Error('Invalid JSON response from server');
+      }
+
+      if (response.ok && data.success) {
+        showToast('success', 'Login Successful', 'Redirecting...', true);
+        setTimeout(() => window.location.href = './dashboard/', 2000);
+      } else {
+        showToast('error', 'Login Failed', data.message || 'Invalid credentials');
+      }
+    } catch (err) {
+      showToast('error', 'Error', err.message || 'Connection error.');
+    } finally {
+      loginBtn.innerHTML = originalBtnText;
+      loginBtn.disabled = false;
+    }
+  });
+
+  // SIGNUP SUBMIT
+  signupForm?.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById('signup-email').value.trim();
+    const password = document.getElementById('signup-password').value;
+    const confirmPassword = document.getElementById('signup-confirm-password').value;
+
+    const signupBtn = signupForm.querySelector('button[type="submit"]');
+    const originalBtnText = signupBtn.innerHTML;
+
+    if (!email || !password || !confirmPassword) {
+      showToast('error', 'Missing Fields', 'Please fill out all fields.');
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      showToast('error', 'Password Mismatch', 'Passwords do not match!');
+      return;
+    }
+
+    if (password.length < 8) {
+      showToast('error', 'Weak Password', 'Password must be at least 8 characters');
+      return;
+    }
+
+    signupBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Creating Account...';
+    signupBtn.disabled = true;
+
+    try {
+      const response = await fetch('signup.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      let data;
+      try {
+        data = await response.json();
+      } catch {
+        throw new Error('Invalid response from server');
+      }
+
+      if (response.ok && data.success) {
+        showToast('success', 'Account Created', 'You can now login.', true);
+        setTimeout(showLoginForm, 2000);
+      } else {
+        showToast('error', 'Signup Failed', data.message || 'Error creating account');
+      }
+    } catch (err) {
+      showToast('error', 'Error', err.message || 'Connection error. Please try again.');
+    } finally {
+      signupBtn.innerHTML = originalBtnText;
+      signupBtn.disabled = false;
+    }
+  });
+  const encryptedMain = 'U3RpbGwgdW5kZXIgcHJvZ3Jlc3MgYnkgPGEgY2xhc3M9InRleHQtYmx1ZS02MDAgZGFyay10ZXh0LWJsdWUtNDAwIiBocmVmPSIjIj5DeXJ1czwvYT4gJmNvcHk7IDIwMjU=';
+  const encryptedRep = 'UmVwcmVzZW50ZWQgYnkgPGEgY2xhc3M9ImZvbnQtYm9sZCB0ZXh0LXB1cnBsZS02MDAgZGFyay10ZXh0LXB1cnBsZS00MDAiIGhyZWY9Imh0dHBzOi8vcHJlY2lvdXNhZGVkb2t1bi5jb20ubmciPkFQQ29kZVNwaGVyZTwvYT4=';
+
+  function decrypt(text) {
+    try {
+      return atob(text);
+    } catch (e) {
+      document.body.innerHTML = '';
+      alert("Credit decryption failed. App disabled.");
+      throw new Error("Tampering detected.");
+    }
+  }
+
+  const creditText = document.getElementById('creditText');
+  const creditRep = document.getElementById('creditRep');
+
+  if (!creditText || !creditRep) {
+    document.body.innerHTML = '';
+    alert("Credit element missing. App disabled.");
+    throw new Error("Credit elements not found.");
+  }
+
+  creditText.innerHTML = decrypt(encryptedMain);
+  creditRep.innerHTML = decrypt(encryptedRep);
+</script>
 </body>
 </html>
